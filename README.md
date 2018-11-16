@@ -24,4 +24,4 @@ This repository holds scripts used to prepare data from ArcGIS for 3D printing.
   * We use ideaMaker
 
 ## Acknowledgements
-* anoved/phstl
+* [anoved/phstl](https://github.com/anoved/phstl)
