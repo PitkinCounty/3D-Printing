@@ -12,10 +12,11 @@ This repository holds scripts used to prepare data from ArcGIS for 3D printing.
 * Export GeoTiff Height File (*.tif) from ArcGIS
   * File size should not exceed 10 MB
 	* breaks in the model should have their value set to 4000 ft
+	* Cell Size can be increased (cell count decreased) to reduce file size
 * run *.tif through phstl.py to generate *.stl surface
 
         python phstl.py -m 5000 example.tif example.stl
-	* Ideal file size < 100 MB
+	* Ideal file size < 50 MB
 * run *.stl through blender.py to generate *-3D.stl solid model
 
         blender untitled.blend --background --python printv4.py C:\OSGeo4W64\example.stl
