@@ -3,7 +3,7 @@
 This repository holds scripts used to prepare data from ArcGIS for 3D printing.
 
 ## Inventory
-* phstl.py (copied from another repo)
+* phstl.py ([copied from another repo](https://github.com/anoved/phstl))
   * convert a **.TIF** file into a 3D surface **.STL**
 * blender.py
   * convert a 3D surface **.STL** (no thickness) to a solid body **-3D.STL**
