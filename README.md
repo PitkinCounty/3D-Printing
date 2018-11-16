@@ -7,6 +7,9 @@ This repository holds scripts used to prepare data from ArcGIS for 3D printing.
   * convert a **.TIF** file into a 3D surface **.STL**
 * blender.py
   * convert a 3D surface **.STL** (no thickness) to a solid body **-3D.STL**
+* batch3D.py (not developed yet)
+  * process a directory of TIF files, each into a 3D Model for printing
+
 
 ## Workflow
 * Export GeoTiff Height File (*.tif) from ArcGIS
@@ -15,11 +18,11 @@ This repository holds scripts used to prepare data from ArcGIS for 3D printing.
 	* Cell Size can be increased (cell count decreased) to reduce file size
 * run *.tif through phstl.py to generate *.stl surface
 
-        python phstl.py -m 5000 example.tif example.stl
+      python phstl.py -m 5000 example.tif example.stl
 	* Ideal file size < 50 MB
 * run *.stl through blender.py to generate *-3D.stl solid model
 
-        blender untitled.blend --background --python printv4.py C:\OSGeo4W64\example.stl
+      blender untitled.blend --background --python printv4.py C:\OSGeo4W64\example.stl
 	* Ideal file size < 100 MB
 	* should modify to name the file '3D-*.stl'?
 * import *-3D.stl into slicing software to generate *.gcode for 3D printer
