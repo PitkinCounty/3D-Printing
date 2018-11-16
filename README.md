@@ -6,3 +6,6 @@
 * blender.py
   * convert a 3D surface **.STL** (no thickness) to a solid body **-3D.STL**
 * 
+
+## Acknowledgements
+* anoved/phstl
