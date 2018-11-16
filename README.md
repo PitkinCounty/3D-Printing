@@ -16,7 +16,6 @@ This repository holds scripts used to prepare data from ArcGIS for 3D printing.
 
         python phstl.py -m 5000 example.tif example.stl
 	* Ideal file size < 100 MB
-	* We might want to add a base [-b 20]
 * run *.stl through blender.py to generate *-3D.stl solid model
 
         blender untitled.blend --background --python printv4.py C:\OSGeo4W64\example.stl
